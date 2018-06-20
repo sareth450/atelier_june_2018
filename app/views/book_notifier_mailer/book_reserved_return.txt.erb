@@ -1,0 +1,4 @@
+
+Hej <%= @awaiting.email %>
+<%= @reservation.expires_at %> upływa termin oddania książki pt. <%= @book.title %>. Zaraz znow bedzie dostepna.
+<%= link_to "Przejdź do książki", book_url(@book.id, host: "localhost:3000") %>
