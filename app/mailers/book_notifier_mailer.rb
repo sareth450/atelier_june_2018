@@ -1,0 +1,2 @@
+class BookNotifierMailer < ApplicationMailer
+end

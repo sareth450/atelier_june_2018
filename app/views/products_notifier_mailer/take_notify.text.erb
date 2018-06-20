@@ -1,0 +1,7 @@
+Cześć!
+Wypozyczyles ksiazke <%=@book.title %> <%= link_to 'wiecej informacji', book_url(@book.id, host: "localhost:3000") %>
+Liczba stron: <%= @book.page_count %>
+<% @res = Reservation.find_by('status' => 'TAKEN', 'book_id' => @book.id, 'user_id' => @user.id) %>
+Data zwrotu: <%= @res.expires_at %>
+ISBN: <%= @book.isbn %>
+Data publikacji: <%= @book.published_date %>
